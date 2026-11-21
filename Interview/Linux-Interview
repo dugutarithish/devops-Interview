@@ -1,0 +1,72 @@
+Linux Basics (Must-Know)
+1. What is Linux?
+Linux is an open-source, Unix-like operating system kernel used to build operating systems like
+Ubuntu, RHEL, CentOS, Amazon Linux, etc. It’s widely used in servers, cloud, and DevOps due to
+stability and security.
+2. Difference between Linux and Unix?
+Linux Unix Open source Mostly proprietary Free Paid Many distributions Limited variants Used
+widely in DevOps Used in legacy systems
+3. What is a Linux distribution?
+A Linux distribution (distro) is a Linux kernel + package manager + utilities + tools. Examples:
+Ubuntu, RHEL, CentOS, Amazon Linux.
+4. What is the Linux kernel?
+The kernel is the core of the OS that manages CPU, memory, processes, hardware, and system
+calls.
+5. Common Linux directories and purpose
+Directory Purpose /Root /home User home
+directories/etcConfiguration files/varLogs
+variable data/binEssential
+commands/usrUser binaries/tmpTemporary files
+6. Difference between cp, mv, and rsync?
+cp → Copy files
+mv → Move/rename files
+rsync → Efficient file transfer with sync & resume (used in DevOps a lot)
+7. Hard link vs Soft link?
+Hard LinkSoft LinkSame inodeDifferent inodeWorks if original deletedBreaks if original
+deletedCannot cross filesystemCan cross filesystem
+8. Explain Linux file permissions
+Permissions are Read (4), Write (2), Execute (1)
+Applied to User, Group, Others
+Example:
+-rwxr-xr--
+User: rwx
+Group: r-x
+Others: r--
+
+9. What is chmod 755?
+Owner: 7 (rwx)
+Group: 5 (r-x)
+Others: 5 (r-x)
+10. What is umask?
+Umask = 022 defines default permission values for newly created files and directories.
+Files - 777 - 022 = 755
+11. What is a process?
+A process is a running instance of a program with a unique PID.
+12. Difference between ps and top?
+pstopStatic snapshotReal-timeShows onceContinuously updates
+13. What is a zombie process?
+A process that has completed execution but still has an entry in the process table because its
+parent hasn’t collected its exit status.
+14. How do you kill a process?
+kill PID
+kill -9 PID # force kill
+15. How do you check open ports?
+netstat -tulnp
+ss -tulnp
+16. How do you check DNS resolution?
+nslookup google dot com
+dig google dot com
+17. Difference between df and du?
+dfduDisk freeDisk usageFilesystem levelFile level
+18. How do you check memory usage?
+free -m
+top
+vmstat
+19. What is swap memory?
+Swap is disk space used as virtual RAM when physical memory is full.
+20. Where are logs stored?
+Mostly under /var/log
+Common logs:
+/var/log/messages
+/var/log/syslog
+/var/log/auth.log
