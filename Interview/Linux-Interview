@@ -75,3 +75,11 @@ Common logs:
 Q: What is Linux and what are its main features?
 Linux is a free and open-source operating system based on Unix. Its main features include its stability, security, flexibility,
 free of cost, and support for a wide range of hardware.
+
+
+Q: What is the difference between Linux and UNIX?
+The primary difference is that Linux is open source and free, while UNIX is proprietary. Additionally, 
+Linux is widely used for a variety of applications,whereas UNIX is primarily used in large enterprises.
+
+
+
