@@ -70,3 +70,8 @@ Common logs:
 /var/log/messages
 /var/log/syslog
 /var/log/auth.log
+
+
+Q: What is Linux and what are its main features?
+Linux is a free and open-source operating system based on Unix. Its main features include its stability, security, flexibility,
+free of cost, and support for a wide range of hardware.
